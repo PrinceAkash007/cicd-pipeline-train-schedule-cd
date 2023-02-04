@@ -13,7 +13,7 @@ pipeline {
              branch 'master'
              }
              steps {
-              withCredentials ([usernamePassword(credentialsId: 'crimson_pwd' , usernameVariable: 'USERNAME' , passwordVarible: 'PASSWD"
+              withCredentials ([usernamePassword(credentialsId: 'crimson_pwd' , usernameVariable: 'USERNAME' , passwordVarible: 'PASSWD')])
                        sshPublisher(
                           failOnError: true,
                           continueOnError: false,
