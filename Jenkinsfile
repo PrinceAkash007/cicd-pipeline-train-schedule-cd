@@ -19,7 +19,7 @@ pipeline {
                           continueOnError: false,
                           publishers: [
                               sshPublisherDesc(
-                                  configName: 'stag'
+                                  configName: 'stag',
                                   sshCredentials: [
                                       username: "$USERNAME",
                                       encyptedPasspharse: "$PASSWD"
