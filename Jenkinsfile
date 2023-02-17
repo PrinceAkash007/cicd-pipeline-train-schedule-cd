@@ -40,7 +40,7 @@ pipeline {
         }
        stage('DeployToStaging') {
            when {
-               branch 'master
+               branch 'master'
            }
            steps {
                input 'is the stagging working properly'
